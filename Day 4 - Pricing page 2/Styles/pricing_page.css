@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  color: #15294B;
+}
+
+.flex_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+}
+#main .main_inner {
+  gap: 20px;
+}
+
+.package_container {
+  border: solid #EBEDF0 1px;
+  border-radius: 20px;
+}
+.package_container > * {
+  padding: 20px;
+}
+
+.badge {
+  font-size: 15px;
+  padding: 8px;
+  border: solid #EBEDF0 1px;
+  border-radius: 1000px;
+}/*# sourceMappingURL=pricing_page.css.map */
