@@ -22,28 +22,118 @@
 #main{
     width: 100vw;
     height: 100vh;
-
+    // flex-direction: column;
+    
     .main_inner{
         gap: 20px;
+        width: 1000px;
+        // border: solid $color-B30 1px;
+        
     }
 }
 
 
 
 .package_container{
+    display: flex;
+    flex-direction: column;
     border: solid $color-B30 1px;
     border-radius: 20px;
-
+    // width: auto;
+    
     & > *{
         padding: 20px;
+    }
+
+    .heading{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    
+    
+        .badge{
+            font-size: $type-dt-xs;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            padding: 4px 8px;
+            border: solid $color-B30 1px;
+            border-radius: 1000px;
+        }
+    
+        .title{
+            font-size: $type-dt-lg;
+            font-weight: 600;
+        }
+    }
+    
+    .cta_section{
+        justify-content: space-between;
+        gap: 30px;
+        p{
+            font-weight: 600;
+            span{
+                font-weight: 400;
+                color: $color-B100;
+            }
+        }
+        .btn{
+            gap: 8px;
+            padding: 8px 20px;
+            border-radius: 200px;
+            background-color: $color-B800;
+            color: white;
+            font-weight: 500;
+
+            &:hover{
+                cursor: pointer;
+            }
+            i{
+                color: white;
+            }
+        }
     }
 }
 
 
+.list{
+    width: 260px;
+    padding: 4px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+    i{
+        font-size: 20px;
+    }
+}
 
-.badge{
-    font-size: $type-dt-sm;
-    padding: 8px;
-    border: solid $color-B30 1px;
-    border-radius: 1000px;
+.p2 .package_list{
+    max-height: 220px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 520px;
+}
+
+
+
+.dark_mode{
+    background-color: $color-B800;
+    border: solid white 1px;
+    border: none;
+
+    & *{
+        color: white;
+    }
+
+    .cta_section .btn{
+        color: $color-B800;
+        background-color: $color-lime-green;
+        i{
+            color: $color-B800;
+            
+        }
+    }
 }
